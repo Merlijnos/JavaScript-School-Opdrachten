@@ -33,8 +33,17 @@ while (true) {
 }
 
 var totaalprijs = frisbesteld * frisprijs + bierbesteld * bierprijs + wijnbesteld * wijnprijs;
+bonnetje()
 
-alert('U heeft ' + frisbesteld + ' fris besteld voor een totaalprijs van €' + (frisbesteld * frisprijs).toFixed(2) +
-      '\nU heeft ' + bierbesteld + ' bier besteld voor een totaalprijs van €' + (bierbesteld * bierprijs).toFixed(2) +
-      '\nU heeft ' + wijnbesteld + ' wijn besteld voor een totaalprijs van €' + (wijnbesteld * wijnprijs).toFixed(2) +
-      '\n\nTotaal: €' + totaalprijs.toFixed(2));
+function bonnetje() {
+  bonnetjetxt = '---------------------------------------------'+ "\n";
+  if (frisbesteld > 0) {
+    bonnetjetxt += 'Fris: ' + frisbesteld + ' x €' + frisprijs + ' = €' + frisbesteld * frisprijs + '\n';
+  }
+  if (bierbesteld > 0) {
+    bonnetjetxt += 'Bier: ' + bierbesteld + ' x €' + bierprijs + ' = €' + bierbesteld * bierprijs + '\n';
+  }
+  if (wijnbesteld > 0) {
+    bonnetjetxt += 'Wijn: ' + wijnbesteld + ' x €' + wijnprijs + ' = €' + wijnbesteld * wijnprijs + '\n';
+  }
+  alert(bonnetjetxt + 'Totaal: €' + totaalprijs + '\n' + '---------------------------------------------');}
