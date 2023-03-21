@@ -2,7 +2,6 @@ var frisprijs = 1.50;
 var bierprijs = 2.00;
 var wijnprijs = 2.50;
 
-var menu = ['fris', 'bier', 'wijn'];
 var frisbesteld = 0;
 var bierbesteld = 0;
 var wijnbesteld = 0;
