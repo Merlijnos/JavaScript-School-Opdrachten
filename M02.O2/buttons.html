@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button Click Counter</title>
+  </head>
+  <body>
+    <h1>Button Click Counter</h1>
+    <p>Click a button to increment its counter:</p>
+    <button id="btn1" onclick="handleButtonClick(1)">Button 1: <span id="button1Count">0</span></button>
+    <button id="btn2" onclick="handleButtonClick(2)">Button 2: <span id="button2Count">0</span></button>
+    <button id="btn3" onclick="handleButtonClick(3)">Button 3: <span id="button3Count">0</span></button>
+    <img id="img" src="Images/bg0.jpg">
+    <img id="corner" src="Images/0.jpg">
+    <script>
+      let count = [0, 0, 0];
+      let buttonNumber = 0;
+
+      function handleButtonClick(btnIndex) {
+        buttonNumber = btnIndex;
+        count[btnIndex-1]++;
+        document.getElementById(`button${btnIndex}Count`).innerHTML = count[btnIndex-1];
+        document.getElementById("img").src = `Images/bg${buttonNumber}.jpg`;
+        document.getElementById("corner").src = `Images/${buttonNumber}.jpg`;
+      }
+    </script>
+  </body>
+</html>
