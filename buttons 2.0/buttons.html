@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button Example</title>
+    <style>
+      button {
+        background-color: green;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      button:disabled {
+        cursor: not-allowed;
+      }
+      #img {
+        width: 300px;
+        height: 200px;
+        margin-top: 20px;
+      }
+      #corner {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Button Example</h1>
+    <p>Click on a button to change the background image and disable the button.</p>
+    <button id="btn1" onclick="handleButtonClick(1)">Button 1 (<span id="button1Count">0</span>)</button>
+    <button id="btn2" onclick="handleButtonClick(2)">Button 2 (<span id="button2Count">0</span>)</button>
+    <button id="btn3" onclick="handleButtonClick(3)">Button 3 (<span id="button3Count">0</span>)</button>
+    <img id="img" src="Images/bg0.jpg" alt="Background Image">
+    <img id="corner" src="Images/0.jpg" alt="Corner Image">
+    <script src="buttons.js"></script>
+  </body>
+</html>
