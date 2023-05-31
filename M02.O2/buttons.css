@@ -4,49 +4,12 @@ body {
 
 button {
   background-color: #4CAF50;
-  color: white;
-  width: 200px;
+  width: 300px;
   height: 80px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 0;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-}
-
-button:hover {
-  background-color: #3e8e41;
-}
-
-button:active {
-  background-color: #3e8e41;
-  box-shadow: 0px 5px #666;
-  transform: translateY(4px);
+  font-size: 80px;
 }
 
 button:focus {
-  outline: none;
-}
-
-button.black {
-  background-color: #000000;
-}
-
-button.black:hover {
-  background-color: #1c1c1c;
-}
-
-button.black:active {
-  background-color: #1c1c1c;
-  box-shadow: 0px 5px #666;
-  transform: translateY(4px);
-}
-
-button.black:focus {
   outline: none;
 }
 
@@ -54,5 +17,4 @@ button.black:focus {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
-  justify-items: center;
 }
