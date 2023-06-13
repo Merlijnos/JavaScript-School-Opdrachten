@@ -2,7 +2,7 @@ const buttonColors = ['#4CAF50', '#FF0000', '#800080', '#0000FF', '#000000'];
 const numButtons = 30;
 const container = document.getElementById('container');
 let buttonStates = new Array(numButtons).fill(0);
-
+console.log(buttonStates);
 for (let i = 0; i < numButtons; i++) {
   const button = document.createElement('button');
   button.style.backgroundColor = buttonColors[0];
@@ -13,6 +13,7 @@ for (let i = 0; i < numButtons; i++) {
   button.textContent = `${i+1}`;
   button.addEventListener('click', () => {
     buttonStates[i]++;
+    console.log(buttonStates);
     if (buttonStates[i] >= buttonColors.length) {
       button.remove();
     } else {
